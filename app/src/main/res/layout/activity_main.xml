@@ -41,4 +41,11 @@
         android:backgroundTint="#BA2F85"
     android:id="@+id/bt_login"
     />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Send Data"
+        android:backgroundTint="#BA2F85"
+        android:id="@+id/sendData"
+        />
 </LinearLayout>

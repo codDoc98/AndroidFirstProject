@@ -7,8 +7,12 @@
     <TextView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Login Successful"
     android:textSize="100dp"
-    android:id="@+id/bt_open"  />
+    android:id="@+id/username"  />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="100dp"
+        android:id="@+id/password"  />
 
 </LinearLayout>

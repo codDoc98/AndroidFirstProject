@@ -3,38 +3,26 @@ package com.example.androidfirstproject;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class SecondActivity extends AppCompatActivity {
-
+    TextView username, password;
 
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
+
+        username=findViewById(R.id.username);
+        password=findViewById(R.id.password);
+
+        Bundle bundle = getIntent().getExtras();
+
+        username.setText(bundle.getString("key1","default values"));
+
+        password.setText(bundle.getString("key2","default value"));
+
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
 }
